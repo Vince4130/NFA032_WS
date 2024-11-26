@@ -1,0 +1,9 @@
+package geometrie;
+
+public class Disque {
+
+	public Disque() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

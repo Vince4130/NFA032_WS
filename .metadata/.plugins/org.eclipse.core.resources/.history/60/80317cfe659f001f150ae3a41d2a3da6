@@ -1,0 +1,13 @@
+package exemples;
+
+public class ExemplesEnum {
+
+	public enum civilite {
+		Mlle, Mme, Monsieur
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

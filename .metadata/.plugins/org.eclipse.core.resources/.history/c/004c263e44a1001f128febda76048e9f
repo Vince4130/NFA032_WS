@@ -1,0 +1,39 @@
+package Exercice2;
+
+public class SigneProduit {
+
+	public String signe(Integer a, Integer b) {
+		
+		String signe = "positif";
+		
+		String signeA = a.toString();
+		String signeB = b.toString();
+		
+		if(signeA.contains("-")) {
+			
+			if(!signeB.contains("-")) {
+				signe = "négatif";
+			}
+			
+		} else {
+			
+			if(signeB.contains("-")) {
+				signe = "négatif";
+			}
+		}
+		
+		return signe;
+	}
+	
+	public static void main(String[] args) {
+		
+		SigneProduit signeP = new SigneProduit();
+		
+		Integer a = 1;
+		Integer b = -5;
+		
+		System.out.println(signeP.signe(a, b));	
+		
+	}
+
+}

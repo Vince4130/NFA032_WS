@@ -1,0 +1,45 @@
+package Exercice2;
+
+public class SigneProduit {
+
+	public String signe(Integer a, Integer b) {
+		
+		String signe = "positif";
+		
+		String signeA = a.toString();
+		String signeB = b.toString();
+		
+		if((signeA.contains("-") && !signeB.contains("-")) || 
+				(!signeA.contains("-") && signeB.contains("-"))) {
+			signe = "négatif";
+		}
+		
+		/**
+		if(signeA.contains("-")) {
+			
+			if(!signeB.contains("-")) {
+				signe = "négatif";
+			}
+			
+		} else {
+			
+			if(signeB.contains("-")) {
+				signe = "négatif";
+			}
+		} **/
+		
+		return signe;
+	}
+	
+	public static void main(String[] args) {
+		
+		SigneProduit signeP = new SigneProduit();
+		
+		Integer a = 1;
+		Integer b = 5;
+		
+		System.out.println("Le signe du produit : "+a+"x"+b+" est "+signeP.signe(a, b));	
+		
+	}
+
+}

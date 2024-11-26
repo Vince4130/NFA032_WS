@@ -1,0 +1,30 @@
+package Exercice3;
+
+public class Maximum {
+
+	public int trouveMax(int a, int b, int c) {
+		
+		int max = a;
+		
+		if( a < b) {
+			
+			max = b;
+			
+			if(b < c) {
+				max = c;
+			}
+		}
+		
+		return max;
+	}
+	public static void main(String[] args) {
+		
+		int a = 4;
+		
+		int b = 5;
+		
+		int c = 2;
+
+	}
+
+}

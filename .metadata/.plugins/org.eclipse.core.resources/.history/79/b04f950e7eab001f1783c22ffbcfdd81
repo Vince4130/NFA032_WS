@@ -1,0 +1,16 @@
+package qcm;
+
+public class Question1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int xx = 10192457;
+	    short zz = 9456;
+	    int yy = 21;
+	     boolean w = (xx % yy < 2) || !(xx / yy - zz != 3 * zz * yy ) && (yy * zz <= xx/3);
+	     
+	     System.out.println(w);
+	}
+
+}
